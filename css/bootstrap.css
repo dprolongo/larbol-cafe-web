@@ -898,7 +898,7 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
-  color: #333;
+  color: #66401d;
   background-color: #fff;
 }
 input,
@@ -910,12 +910,12 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #428bca;
+  color: #8e6d4f;
   text-decoration: none;
 }
 a:hover,
 a:focus {
-  color: #2a6496;
+  color: #5f442c;
   text-decoration: underline;
 }
 a:focus {
@@ -1001,6 +1001,10 @@ h6,
   line-height: 1.1;
   color: inherit;
 }
+h1{
+    background-color: rgba(238, 238, 238, 0.33);
+}
+
 h1 small,
 h2 small,
 h3 small,
@@ -1184,7 +1188,7 @@ a.text-danger:hover {
 }
 .bg-primary {
   color: #fff;
-  background-color: #428bca;
+  background-color: #66401d;
 }
 a.bg-primary:hover {
   background-color: #3071a9;
