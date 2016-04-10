@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
 
@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Stylish Portfolio - Start Bootstrap Theme</title>
+    <title>L' árbol Cafetería</title>
 
     <!-- Bootstrap Core CSS -->
     <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
@@ -18,9 +18,11 @@
 
     <!-- Custom CSS -->
     <link href="css/stylish-portfolio.css" rel="stylesheet">
+    <link href="css/larbol-cafe.css" rel="stylesheet">
+
 
     <!-- Custom Fonts -->
-    <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -40,22 +42,22 @@
         <ul class="sidebar-nav">
             <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
             <li class="sidebar-brand">
-                <a href="#top">Start Bootstrap</a>
+                <a href="#top"  onclick = $("#menu-close").click(); >Start Bootstrap</a>
             </li>
             <li>
-                <a href="#top">Home</a>
+                <a href="#top" onclick = $("#menu-close").click(); >Home</a>
             </li>
             <li>
-                <a href="#about">About</a>
+                <a href="#about" onclick = $("#menu-close").click(); >About</a>
             </li>
             <li>
-                <a href="#services">Services</a>
+                <a href="#services" onclick = $("#menu-close").click(); >Services</a>
             </li>
             <li>
-                <a href="#portfolio">Portfolio</a>
+                <a href="#portfolio" onclick = $("#menu-close").click(); >Portfolio</a>
             </li>
             <li>
-                <a href="#contact">Contact</a>
+                <a href="#contact" onclick = $("#menu-close").click(); >Contact</a>
             </li>
         </ul>
     </nav>
@@ -74,8 +76,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Stylish Portfolio is the perfect theme for your next project!</h2>
-                    <p class="lead">This theme features some wonderful photography courtesy of <a target="_blank" href="http://join.deathtothestockphoto.com/">Death to the Stock Photo</a>.</p>
+                    <h2>Ven a L' árbol Café, nuestra nueva cafetería con diferentes ambientes para que puedas desayunar, tomar una caña o pasar una buena tarde.</h2>
+                    <p class="lead">Tómate un café o té tranquilo en alguno de nuestros rincones únicos, podrás relajarte en nuestro sofá mientras te tomas una caña con un buen plato de queso, o en nuestro sillón de la abuela mientras te tomas una té y te relajas.
+                    También puedes venir con los más pequeños y que se lo pasen pipa en nuestro columpio mientras vosotros os tomais un café y ellos un batido y un trozo de nuestra exquisita tarta de queso o de zanahoria.</a>.</p>
                 </div>
             </div>
             <!-- /.row -->
@@ -95,8 +98,11 @@
                         <div class="col-md-3 col-sm-6">
                             <div class="service-item">
                                 <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-coffee fa-stack-1x text-primary"></i>
+                                <!-- <i class="fa fa-circle fa-stack-2x"></i> -->
+                                <!-- <i class="fa fa-coffee fa-stack-1x text-primary"></i> -->
+                                <div class="redondo">
+                                    <img src="img/cafe.jpg" alt="café solo, café con leche, larbol cafeteria, " />
+                                </div>
                             </span>
                                 <h4>
                                     <strong>Nuestos cafés</strong>
@@ -108,40 +114,49 @@
                         <div class="col-md-3 col-sm-6">
                             <div class="service-item">
                                 <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-compass fa-stack-1x text-primary"></i>
+                                <!-- <i class="fa fa-circle fa-stack-2x"></i> -->
+                                <!-- <i class="fa fa-compass fa-stack-1x text-primary"></i> -->
+                                <div class="redondo">
+                                    <img src="img/tarta.jpg" alt="tartas queso, tartas zanahoria, brownie, larbol cafetería" />
+                                </div>
                             </span>
                                 <h4>
-                                    <strong>Service Name</strong>
+                                    <strong>Tartas</strong>
                                 </h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                <a href="#" class="btn btn-light">Learn More</a>
+                                <p>Nuestras riquísimas tartas de queso, zanahoria o brownies.</p>
+                                <!-- <a href="#" class="btn btn-light">Learn More</a> -->
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6">
                             <div class="service-item">
                                 <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-flask fa-stack-1x text-primary"></i>
+                                <!-- <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-flask fa-stack-1x text-primary"></i> -->
+                                <div class="redondo">
+                                    <img src="img/bolleria.jpg" alt="bollería, cañas chcolate, napolitas, larbol cafetería" />
+                                </div>
                             </span>
                                 <h4>
-                                    <strong>Service Name</strong>
+                                    <strong>Bollería</strong>
                                 </h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                <a href="#" class="btn btn-light">Learn More</a>
+                                <p>Palmeras, cañas y napolitanas de chocolate, etc</p>
+                                <!-- <a href="#" class="btn btn-light">Learn More</a> -->
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6">
                             <div class="service-item">
                                 <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-shield fa-stack-1x text-primary"></i>
+                                <!-- <i class="fa fa-circle fa-stack-2x"></i> -->
+                                <!-- <i class="fa fa-shield fa-stack-1x text-primary"></i> -->
+                                <div class="redondo">
+                                    <img src="img/cañas.jpg" alt="caña cerveza, tapas, larbol cafetería" />
+                                </div>
                             </span>
                                 <h4>
-                                    <strong>Service Name</strong>
+                                    <strong>Cañas y tapas</strong>
                                 </h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                <a href="#" class="btn btn-light">Learn More</a>
+                                <p>Cañas de cerveza o capas de vinos, con un pincho tortilla, un plato jamón, ibéricos o queso.</p>
+                                <!-- <a href="#" class="btn btn-light">Learn More</a> -->
                             </div>
                         </div>
                     </div>
@@ -169,37 +184,75 @@
                     <h2>Nuestros espacios</h2>
                     <hr class="small">
                     <div class="row">
+                        <!-- Sofá -->
                         <div class="col-md-6">
                             <div class="portfolio-item">
                                 <a href="#">
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-1.jpg">
+                                    <img class="img-portfolio img-responsive" src="img/sofa.jpg">
                                 </a>
+                                <p>
+                                    El sofa
+                                </p>
                             </div>
                         </div>
+                        <!-- Columpio -->
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                <a href="#">
+                                    <img class="img-portfolio img-responsive" src="img/columpio.jpg">
+                                </a>
+                                <p>
+                                    El columpio
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Sillón orejero -->
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                <a href="#">
+                                    <img class="img-portfolio img-responsive" src="img/sillon.jpg" onmouseover="this.src='img/sillon-hover.jpg'" onmouseout="this.src='img/sillon.jpg'">
+                                </a>
+                                <p>
+                                    El sillón orejero
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Banquetas -->
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                <a href="#">
+                                    <img class="img-portfolio img-responsive" src="img/banquetas.jpg">
+                                </a>
+                                <p>
+                                    Las banquetas
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Salón principal -->
                         <div class="col-md-6">
                             <div class="portfolio-item">
                                 <a href="#">
                                     <img class="img-portfolio img-responsive" src="img/portfolio-2.jpg">
                                 </a>
+                                <p>
+                                    Nuestro salón principal
+                                </p>
                             </div>
                         </div>
+                        <!-- Take away -->
                         <div class="col-md-6">
                             <div class="portfolio-item">
                                 <a href="#">
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-3.jpg">
+                                    <img class="img-portfolio img-responsive" src="img/take-away.jpg">
                                 </a>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <a href="#">
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-4.jpg">
-                                </a>
+                                <p>
+                                    Take away
+                                </p>
                             </div>
                         </div>
                     </div>
                     <!-- /.row (nested) -->
-                    <a href="#" class="btn btn-dark">View More Items</a>
+                    <!-- <a href="#" class="btn btn-dark">View More Items</a> -->
                 </div>
                 <!-- /.col-lg-10 -->
             </div>
@@ -213,9 +266,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h3>The buttons below are impossible to resist.</h3>
-                    <a href="#" class="btn btn-lg btn-light">Click Me!</a>
-                    <a href="#" class="btn btn-lg btn-dark">Look at Me!</a>
+                    <h3>Donde encontrarnos</h3>
+                    <!-- <a href="#" class="btn btn-lg btn-light">Click Me!</a>
+                    <a href="#" class="btn btn-lg btn-dark">Look at Me!</a> -->
                 </div>
             </div>
         </div>
@@ -242,7 +295,7 @@
                     </h4>
                     <p>Callejones del Perchel nº 4<br>Málaga, Málaga 29002</p>
                     <ul class="list-unstyled">
-                        <li><i class="fa fa-phone fa-fw"></i> (123) 456-7890</li>
+                        <li><i class="fa fa-phone fa-fw"></i><a href="tel:951331540">951331540</a></li>
                         <li><i class="fa fa-envelope-o fa-fw"></i>  <a href="mailto:larbol.cafe@gmail.com">larbol.cafe@gmail.com</a>
                         </li>
                     </ul>
@@ -265,8 +318,8 @@
         </div>
     </footer>
 
-    <!-- jQuery Version 1.11.0 -->
-    <script src="js/jquery-1.11.0.js"></script>
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
