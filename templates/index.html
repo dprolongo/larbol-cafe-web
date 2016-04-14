@@ -1,77 +1,7 @@
-<!DOCTYPE html>
-<html lang="es">
+{% extends "layout.html" %}
 
-<head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>L' árbol Cafetería</title>
-
-    <!-- Bootstrap Core CSS -->
-    <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
-
-    <link href="css/bootstrap.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="css/stylish-portfolio.css" rel="stylesheet">
-    <link href="css/larbol-cafe.css" rel="stylesheet">
-
-
-    <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-</head>
-
-<body>
-
-    <!-- Navigation -->
-    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
-    <nav id="sidebar-wrapper">
-        <ul class="sidebar-nav">
-            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
-            <li class="sidebar-brand">
-                <a href="#top"  onclick = $("#menu-close").click(); >Start Bootstrap</a>
-            </li>
-            <li>
-                <a href="#top" onclick = $("#menu-close").click(); >Home</a>
-            </li>
-            <li>
-                <a href="#about" onclick = $("#menu-close").click(); >About</a>
-            </li>
-            <li>
-                <a href="#services" onclick = $("#menu-close").click(); >Services</a>
-            </li>
-            <li>
-                <a href="#portfolio" onclick = $("#menu-close").click(); >Portfolio</a>
-            </li>
-            <li>
-                <a href="#contact" onclick = $("#menu-close").click(); >Contact</a>
-            </li>
-        </ul>
-    </nav>
-
-    <!-- Header -->
-    <header id="top" class="header">
-        <div class="text-vertical-center">
-            <h1>L' árbol Café</h1>
-            <br>
-            <!-- <a href="#about" class="btn btn-dark btn-lg">Find Out More</a> -->
-        </div>
-    </header>
-
-    <!-- About -->
+{% block content %}
+<!-- About -->
     <section id="about" class="about">
         <div class="container">
             <div class="row">
@@ -101,7 +31,7 @@
                                 <!-- <i class="fa fa-circle fa-stack-2x"></i> -->
                                 <!-- <i class="fa fa-coffee fa-stack-1x text-primary"></i> -->
                                 <div class="redondo">
-                                    <img src="img/cafe.jpg" alt="café solo, café con leche, larbol cafeteria, " />
+                                    <img src="{{ url_for('static', filename='img/cafe.jpg') }}" alt="café solo, café con leche, larbol cafeteria, " />
                                 </div>
                             </span>
                                 <h4>
@@ -117,7 +47,7 @@
                                 <!-- <i class="fa fa-circle fa-stack-2x"></i> -->
                                 <!-- <i class="fa fa-compass fa-stack-1x text-primary"></i> -->
                                 <div class="redondo">
-                                    <img src="img/tarta.jpg" alt="tartas queso, tartas zanahoria, brownie, larbol cafetería" />
+                                    <img src="{{ url_for('static', filename='img/tarta.jpg') }}" alt="tartas queso, tartas zanahoria, brownie, larbol cafetería" />
                                 </div>
                             </span>
                                 <h4>
@@ -133,7 +63,7 @@
                                 <!-- <i class="fa fa-circle fa-stack-2x"></i>
                                 <i class="fa fa-flask fa-stack-1x text-primary"></i> -->
                                 <div class="redondo">
-                                    <img src="img/bolleria.jpg" alt="bollería, cañas chcolate, napolitas, larbol cafetería" />
+                                    <img src="{{ url_for('static', filename='img/bolleria.jpg') }}" alt="bollería, cañas chcolate, napolitas, larbol cafetería" />
                                 </div>
                             </span>
                                 <h4>
@@ -149,7 +79,7 @@
                                 <!-- <i class="fa fa-circle fa-stack-2x"></i> -->
                                 <!-- <i class="fa fa-shield fa-stack-1x text-primary"></i> -->
                                 <div class="redondo">
-                                    <img src="img/cañas.jpg" alt="caña cerveza, tapas, larbol cafetería" />
+                                    <img src="{{ url_for('static', filename='img/cañas.jpg') }}" alt="caña cerveza, tapas, larbol cafetería" />
                                 </div>
                             </span>
                                 <h4>
@@ -188,7 +118,7 @@
                         <div class="col-md-6">
                             <div class="portfolio-item">
                                 <a href="#">
-                                    <img class="img-portfolio img-responsive" src="img/sofa.jpg">
+                                    <img class="img-portfolio img-responsive" src="{{ url_for('static', filename='img/sofa.jpg') }}">
                                 </a>
                                 <p>
                                     El sofa
@@ -199,7 +129,7 @@
                         <div class="col-md-6">
                             <div class="portfolio-item">
                                 <a href="#">
-                                    <img class="img-portfolio img-responsive" src="img/columpio.jpg">
+                                    <img class="img-portfolio img-responsive" src="{{ url_for('static', filename='img/columpio.jpg') }}">
                                 </a>
                                 <p>
                                     El columpio
@@ -210,7 +140,7 @@
                         <div class="col-md-6">
                             <div class="portfolio-item">
                                 <a href="#">
-                                    <img class="img-portfolio img-responsive" src="img/sillon.jpg" onmouseover="this.src='img/sillon-hover.jpg'" onmouseout="this.src='img/sillon.jpg'">
+                                    <img class="img-portfolio img-responsive" src="{{ url_for('static', filename='img/sillon.jpg') }}" onmouseover="this.src='{{ url_for('static', filename='img/sillon-hover.jpg')}}'" onmouseout="this.src='{{ url_for('static', filename='img/sillon.jpg')}}'">
                                 </a>
                                 <p>
                                     El sillón orejero
@@ -221,7 +151,7 @@
                         <div class="col-md-6">
                             <div class="portfolio-item">
                                 <a href="#">
-                                    <img class="img-portfolio img-responsive" src="img/banquetas.jpg">
+                                    <img class="img-portfolio img-responsive" src="{{ url_for('static', filename='img/banquetas.jpg') }}">
                                 </a>
                                 <p>
                                     Las banquetas
@@ -232,7 +162,7 @@
                         <div class="col-md-6">
                             <div class="portfolio-item">
                                 <a href="#">
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-2.jpg">
+                                    <img class="img-portfolio img-responsive" src="{{ url_for('static', filename='img/portfolio-2.jpg') }}">
                                 </a>
                                 <p>
                                     Nuestro salón principal
@@ -243,7 +173,7 @@
                         <div class="col-md-6">
                             <div class="portfolio-item">
                                 <a href="#">
-                                    <img class="img-portfolio img-responsive" src="img/take-away.jpg">
+                                    <img class="img-portfolio img-responsive" src="{{ url_for('static', filename='img/take-away.jpg') }}">
                                 </a>
                                 <p>
                                     Take away
@@ -285,77 +215,4 @@
         </small>
         </iframe>
     </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h4><strong>L' árbol Café</strong>
-                    </h4>
-                    <p>Callejones del Perchel nº 4<br>Málaga, Málaga 29002</p>
-                    <ul class="list-unstyled">
-                        <li><i class="fa fa-phone fa-fw"></i><a href="tel:951331540">951331540</a></li>
-                        <li><i class="fa fa-envelope-o fa-fw"></i>  <a href="mailto:larbol.cafe@gmail.com">larbol.cafe@gmail.com</a>
-                        </li>
-                    </ul>
-                    <br>
-                    <ul class="list-inline">
-                        <li>
-                            <a href="https://www.facebook.com/larbol.cafe/"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://twitter.com/larbol_cafe"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://www.instagram.com/larbol_cafe/"><i class="fa fa-instagram fa-fw fa-3x"></i></a>
-                        </li>
-                    </ul>
-                    <hr class="small">
-                    <!-- <p class="text-muted">Copyright &copy; Your Website 2014</p> -->
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
-    <!-- Custom Theme JavaScript -->
-    <script>
-    // Closes the sidebar menu
-    $("#menu-close").click(function(e) {
-        e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
-    });
-
-    // Opens the sidebar menu
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
-    });
-
-    // Scrolls to the selected menu item on the page
-    $(function() {
-        $('a[href*=#]:not([href=#])').click(function() {
-            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
-
-                var target = $(this.hash);
-                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                if (target.length) {
-                    $('html,body').animate({
-                        scrollTop: target.offset().top
-                    }, 1000);
-                    return false;
-                }
-            }
-        });
-    });
-    </script>
-
-</body>
-
-</html>
+{% endblock %}
